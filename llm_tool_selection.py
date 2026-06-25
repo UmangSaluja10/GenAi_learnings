@@ -23,22 +23,24 @@ print("="*50)
 print("GEMINI Chatbot")
 print("="*50)
 
-def get_current_time():
+def get_current_time(query=None):
     return datetime.now().strftime("%I:%M:%S, %p")
 
 def calculator(expression):
     try:
         return eval(expression)
+    
     except Exception as ex:
         return "Invalid expression"
 
-def motivational_quotes():
+def motivational_quotes(query=None):
     quotes = [
         "Consistency is the key to success",
         "Hard work beats talent when talent doesn't work hard",
         "Action speaks more than words",
         "Dream big, Start small, Act now..."
         ]
+    
     return random.choice(quotes)
 
 def generate_roadmap(topic):
@@ -69,8 +71,31 @@ def select_tool(query):
         Return only tool name
         User Query: {query}
     """
+    
     response = client.models.generate_content(
             model = "gemini-2.5-flash",
             contents = prompt
         )
-    print(f"Assistant: {response.text}")
+    
+    return response.text.strip()
+
+def execute_tool(tool_name,query):
+    tool = Tools.get(tool_name)
+    
+    if not tool:
+        return "Tool not found"
+    
+    return tool(query)
+
+while True:
+    query = input("\nYou: ")
+    
+    if query.lower() == "exit":
+        break
+    
+    tool = select_tool(query)
+    print(f"\n [Selected Tool]: {tool}")
+
+    res = execute_tool(tool,query)
+    print(f"\nAssistant: {res}")
+    
