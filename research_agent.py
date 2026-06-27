@@ -155,6 +155,7 @@ class ResearchAgent:
             print(res)
 
             self.evidence.append(f"{tool_name}\n{res}")
+        return self.evidence
         
     #Analyze evidence
     def analyze_evidence(self):
@@ -200,8 +201,8 @@ class ResearchAgent:
         print("="*50)
         print("Final Recommendation")
         print("="*50)
-
         print(response.text)
+        return response.text
 
     # Run Agent
     def run(self):
@@ -219,7 +220,7 @@ class ResearchAgent:
         print("ANALYSIS: ")
         print(analysis)
         #Final Response
-        self.generate_recommendation(analysis)
+        draft = self.generate_recommendation(analysis)
 
         
 print("==========RESEARCH AGENT==========")

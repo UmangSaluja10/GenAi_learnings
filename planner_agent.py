@@ -192,7 +192,7 @@ class CareerCoachAgent:
         self.execute_plan()
 
         #Final Response
-        self.generate_final_plan()
+        draft = self.generate_final_plan()
 
         
 print("==========PLANNER AGENT==========")
