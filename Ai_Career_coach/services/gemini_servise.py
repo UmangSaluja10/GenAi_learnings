@@ -1,9 +1,16 @@
 """
 Gemini service
 Responsible for communicating with the Gemini API
+
+Responsibilites:
+1. Initialize Gemini client
+2. Send prompt to Gemini
+3. Return the complete Gemini response
+4. Keep API-specific code isolated from Agents
 """
 
 from google import genai
+from typing import Any, Optional
 from config import Config
 
 class GeminiService:
@@ -15,11 +22,12 @@ class GeminiService:
         Config.validate()
         self.client = genai.Client(api_key = Config.GEMINI_API_KEY)
 
-    def generate_response(self, prompt: str) -> str:
+    def generate_response(self, prompt: str, config: Optional[Any]) -> Any:
         """
         Send prompt to Gemini and return response
         Args:
             promtp: Complete prompt to send
+            conif: Optional GenerateContentConfig
         Returns: 
             Ai generated response
         """
@@ -27,8 +35,10 @@ class GeminiService:
         try:
             response = self.client.models.generate_content(
                 model = Config.MODEL_NAME,
-                prompts = prompt)
-            return response.text
+                prompts = prompt,
+                config = config)
+            return response
+        
         except Exception as ex:
             raise RuntimeError(
                 f"Gemini API Error: {ex}"
