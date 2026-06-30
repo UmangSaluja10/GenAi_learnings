@@ -48,7 +48,6 @@ class BaseAgent(ABC):
         """
         pass
 
-    @abstractmethod
     def execute(self) -> str:
         """
         Execute the complete Ai Agent workflow

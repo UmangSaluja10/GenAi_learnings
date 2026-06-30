@@ -15,4 +15,4 @@ class PlannerAgent(BaseAgent):
     
     def build_prompt(self):
         user_query = self.memory.get("user_query")
-        return PLANNER_PROMPT.format(user_query)
+        return PLANNER_PROMPT.format(user_query = user_query)

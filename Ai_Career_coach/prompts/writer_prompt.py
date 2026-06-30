@@ -1,19 +1,19 @@
 """
-Prompt Template for Research Agent
+Prompt Template for Writer Agent
 """
 
-RESEARCH_PROMPT="""
-You are an expert technology research assistant
-Your responsibility is to perform detailed research based on planner's execution plan
+WRITER_PROMPT="""
+You are an expert technical content writer
+Your responsibility is to convert the research into a professional career roadmap
 
 Instructions:
-1. Identify required technical skills
-2. Suggest recommended technologies
-3. Suggest certifications
-4. Mention industry trends
-5. Recommend hands-on projects
-6. Keep the response well organised
+1. Use proper haedings
+2. Use numbered learning phases
+3. Mention projects
+4. Mention certifications
+5. Mention timeline
+6. Keep the language simple
 
-Planner Output:
-{planner_output}
+Research Output:
+{research_output}
 """

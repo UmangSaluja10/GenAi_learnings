@@ -22,7 +22,7 @@ class GeminiService:
         Config.validate()
         self.client = genai.Client(api_key = Config.GEMINI_API_KEY)
 
-    def generate_response(self, prompt: str, config: Optional[Any]) -> Any:
+    def generate_response(self, prompt: str, config: Optional[Any] = None) -> Any:
         """
         Send prompt to Gemini and return response
         Args:
@@ -35,7 +35,7 @@ class GeminiService:
         try:
             response = self.client.models.generate_content(
                 model = Config.MODEL_NAME,
-                prompts = prompt,
+                contents = prompt,
                 config = config)
             return response
         

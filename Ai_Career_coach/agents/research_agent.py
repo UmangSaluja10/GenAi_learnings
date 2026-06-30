@@ -4,7 +4,7 @@ Performs detailed research on the planner's roadmap
 """
 
 from agents.base_agent import BaseAgent
-from prompts.planner_prompt import RESEARCH_PROMPT
+from prompts.researcher_prompt import RESEARCH_PROMPT
 
 class ResearchAgent(BaseAgent):
     def get_agent_name(self):
