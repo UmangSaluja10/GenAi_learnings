@@ -26,8 +26,8 @@ class GeminiService:
         """
         Send prompt to Gemini and return response
         Args:
-            promtp: Complete prompt to send
-            conif: Optional GenerateContentConfig
+            prompt: Complete prompt to send
+            config: Optional GenerateContentConfig
         Returns: 
             Ai generated response
         """
