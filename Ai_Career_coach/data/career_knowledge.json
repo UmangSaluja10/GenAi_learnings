@@ -1,0 +1,396 @@
+{
+    "ai_engineer":{
+        "skills": [
+            "Python",
+            "Machine Learning",
+            "Deep Learning",
+            "Natural Language Processing",
+            "Computer Vision",
+            "Data Analysis",
+            "RAG (Retrieval-Augmented Generation)",
+            "Agentic AI",
+            "MCP",
+            "Programming (Python, R, Java)",
+            "Cloud Computing (AWS, Azure, GCP)",
+            "Big Data Technologies (Hadoop, Spark)",
+            "Model Deployment and Monitoring"
+        ],
+        "certifications": [
+            "AWS Certified Machine Learning - Specialty",
+            "Google Cloud Professional Machine Learning Engineer",
+            "Microsoft Certified: Azure AI Engineer Associate",
+            "TensorFlow Developer Certificate"
+        ],
+        "projects": [
+            "Developing a recommendation system using collaborative filtering",
+            "Building a sentiment analysis model for social media data",
+            "Creating a computer vision application for object detection",
+            "Implementing a chatbot using NLP techniques",
+            "Deploying a machine learning model on cloud platforms"
+        ]
+    },
+    "data_scientist":{
+        "skills": [
+            "Python",
+            "R",
+            "SQL",
+            "Data Visualization (Matplotlib, Seaborn, Tableau)",
+            "Statistical Analysis",
+            "Machine Learning",
+            "Big Data Technologies (Hadoop, Spark)",
+            "Data Cleaning and Preprocessing",
+            "Feature Engineering",
+            "Model Evaluation and Validation"
+        ],
+        "certifications": [
+            "Certified Data Scientist (CDS)",
+            "Microsoft Certified: Data Scientist Associate",
+            "Google Data Analytics Professional Certificate"
+        ],
+        "projects": [
+            "Analyzing customer churn data to predict retention rates",
+            "Building a predictive model for sales forecasting",
+            "Creating interactive dashboards for business intelligence",
+            "Performing sentiment analysis on product reviews",
+            "Developing a recommendation engine for e-commerce platforms"
+        ]
+    },
+    "ml_engineer":{
+        "skills": [
+            "Python",
+            "Machine Learning",
+            "Deep Learning",
+            "Data Preprocessing",
+            "Model Deployment",
+            "Cloud Computing (AWS, Azure, GCP)",
+            "Big Data Technologies (Hadoop, Spark)",
+            "Model Optimization and Tuning",
+            "Version Control (Git)",
+            "Containerization (Docker, Kubernetes)"
+        ],
+        "certifications": [
+            "AWS Certified Machine Learning - Specialty",
+            "Google Cloud Professional Machine Learning Engineer",
+            "Microsoft Certified: Azure AI Engineer Associate"
+        ],
+        "projects": [
+            "Building a machine learning model for image classification",
+            "Implementing a recommendation system using collaborative filtering",
+            "Deploying a deep learning model on cloud platforms",
+            "Optimizing model performance through hyperparameter tuning",
+            "Creating a real-time prediction system using streaming data"
+        ]
+    },
+    "fullstack_developer":{
+        "skills": [
+            "HTML, CSS, JavaScript",
+            "Front-end Frameworks (React, Angular, Vue.js)",
+            "Back-end Development (Node.js, Django, Flask)",
+            "Database Management (SQL, NoSQL)",
+            "RESTful API Development",
+            "Version Control (Git)",
+            "Cloud Computing (AWS, Azure, GCP)",
+            "Containerization (Docker, Kubernetes)",
+            "Testing and Debugging",
+            "Agile Development Methodologies"
+        ],
+        "certifications": [
+            "Certified Full Stack Developer",
+            "Microsoft Certified: Azure Developer Associate",
+            "AWS Certified Developer - Associate"
+        ],
+        "projects": [
+            "Developing a responsive web application using React and Node.js",
+            "Building a RESTful API for a social media platform",
+            "Creating a full-stack e-commerce website with payment integration",
+            "Implementing user authentication and authorization in a web app",
+            "Deploying a web application on cloud platforms"
+        ]
+    },
+    "frontend_developer":{
+        "skills": [
+            "HTML, CSS, JavaScript",
+            "Front-end Frameworks (React, Angular, Vue.js)",
+            "Responsive Web Design",
+            "Cross-Browser Compatibility",
+            "Version Control (Git)",
+            "UI/UX Design Principles",
+            "Testing and Debugging",
+            "Performance Optimization",
+            "Web Accessibility Standards"
+        ],
+        "certifications": [
+            "Certified Front-End Developer",
+            "Microsoft Certified: Azure Developer Associate",
+            "AWS Certified Developer - Associate"
+        ],
+        "projects": [
+            "Developing a responsive web application using React and Bootstrap",
+            "Creating interactive UI components with JavaScript and CSS animations",
+            "Building a single-page application (SPA) with Angular or Vue.js",
+            "Implementing form validation and user input handling in a web app",
+            "Optimizing website performance for faster load times"
+        ]
+    },
+    "backend_developer":{
+        "skills": [
+            "Server-side Programming (Node.js, Django, Flask)",
+            "Database Management (SQL, NoSQL)",
+            "RESTful API Development",
+            "Authentication and Authorization",
+            "Version Control (Git)",
+            "Cloud Computing (AWS, Azure, GCP)",
+            "Containerization (Docker, Kubernetes)",
+            "Testing and Debugging",
+            "Performance Optimization",
+            "Agile Development Methodologies"
+        ],
+        "certifications": [
+            "Certified Backend Developer",
+            "Microsoft Certified: Azure Developer Associate",
+            "AWS Certified Developer - Associate"
+        ],
+        "projects": [
+            "Building a RESTful API for a social media platform",
+            "Implementing user authentication and authorization in a web app",
+            "Creating a backend service for an e-commerce website",
+            "Optimizing database queries for improved performance",
+            "Deploying a backend application on cloud platforms"
+        ]
+    },
+    "flutter_developer":{
+        "skills": [
+            "Dart Programming Language",
+            "Flutter Framework",
+            "Mobile App Development (iOS and Android)",
+            "State Management (Provider, Bloc, Riverpod)",
+            "UI/UX Design Principles",
+            "RESTful API Integration",
+            "Version Control (Git)",
+            "Testing and Debugging",
+            "Performance Optimization",
+            "Deployment to App Stores"
+        ],
+        "certifications": [
+            "Certified Flutter Developer",
+            "Google Associate Android Developer",
+            "Microsoft Certified: Azure Developer Associate"
+        ],
+        "projects": [
+            "Developing a cross-platform mobile application using Flutter",
+            "Implementing state management in a Flutter app with Provider or Bloc",
+            "Creating a responsive UI for a mobile app with Flutter widgets",
+            "Integrating RESTful APIs for data fetching in a Flutter app",
+            "Deploying a Flutter app to Google Play Store and Apple App Store"
+        ]
+    },
+    "devops_engineer":{
+        "skills": [
+            "Continuous Integration and Continuous Deployment (CI/CD)",
+            "Infrastructure as Code (IaC) with Terraform or CloudFormation",
+            "Containerization (Docker, Kubernetes)",
+            "Monitoring and Logging (Prometheus, Grafana, ELK Stack)",
+            "Cloud Computing (AWS, Azure, GCP)",
+            "Scripting Languages (Bash, Python)",
+            "Version Control (Git)",
+            "Configuration Management (Ansible, Chef, Puppet)",
+            "Networking and Security",
+            "Agile Development Methodologies"
+        ],
+        "certifications": [
+            "AWS Certified DevOps Engineer - Professional",
+            "Google Cloud Professional DevOps Engineer",
+            "Microsoft Certified: Azure DevOps Engineer Expert"
+        ],
+        "projects": [
+            "Setting up a CI/CD pipeline for automated testing and deployment",
+            "Implementing infrastructure as code using Terraform or CloudFormation",
+            "Containerizing applications with Docker and orchestrating with Kubernetes",
+            "Monitoring application performance and setting up alerts with Prometheus and Grafana",
+            "Automating server configuration and management with Ansible or Chef"
+        ]
+    },
+    "cloud_engineer":{
+        "skills": [
+            "Cloud Computing Platforms (AWS, Azure, GCP)",
+            "Infrastructure as Code (IaC) with Terraform or CloudFormation",
+            "Containerization (Docker, Kubernetes)",
+            "Networking and Security in Cloud Environments",
+            "Monitoring and Logging (Prometheus, Grafana, ELK Stack)",
+            "Scripting Languages (Bash, Python)",
+            "Version Control (Git)",
+            "Serverless Architecture",
+            "Disaster Recovery and Backup Strategies",
+            "Agile Development Methodologies"
+        ],
+        "certifications": [
+            "AWS Certified Solutions Architect - Associate",
+            "Google Cloud Professional Cloud Architect",
+            "Microsoft Certified: Azure Solutions Architect Expert"
+        ],
+        "projects": [
+            "Designing and deploying a scalable cloud architecture for a web application",
+            "Implementing infrastructure as code using Terraform or CloudFormation",
+            "Containerizing applications with Docker and orchestrating with Kubernetes",
+            "Setting up monitoring and logging for cloud resources with Prometheus and Grafana",
+            "Implementing disaster recovery and backup strategies for cloud environments"
+        ]
+    },
+    "product_manager":{
+        "skills": [
+            "Product Lifecycle Management",
+            "Market Research and Analysis",
+            "User Experience (UX) Design Principles",
+            "Agile and Scrum Methodologies",
+            "Roadmap Planning and Prioritization",
+            "Stakeholder Management",
+            "Data-Driven Decision Making",
+            "Project Management Tools (Jira, Trello, Asana)",
+            "Communication and Presentation Skills",
+            "Business Strategy and Financial Acumen"
+        ],
+        "certifications": [
+            "Certified Scrum Product Owner (CSPO)",
+            "Pragmatic Institute Certified Product Manager (PMC)",
+            "AIPMM Certified Product Manager (CPM)"
+        ],
+        "projects": [
+            "Developing a product roadmap for a new software application",
+            "Conducting market research to identify customer needs and preferences",
+            "Collaborating with cross-functional teams to define product requirements",
+            "Implementing agile methodologies for product development and delivery",
+            "Analyzing product performance metrics to inform strategic decisions"
+        ]
+    },
+    "management_consultant":{
+        "skills": [
+            "Business Strategy and Analysis",
+            "Market Research and Competitive Analysis",
+            "Financial Modeling and Forecasting",
+            "Project Management and Planning",
+            "Change Management and Organizational Development",
+            "Data Analysis and Visualization (Excel, Tableau, Power BI)",
+            "Communication and Presentation Skills",
+            "Problem-Solving and Critical Thinking",
+            "Stakeholder Management",
+            "Industry Knowledge and Expertise"
+        ],
+        "certifications": [
+            "Certified Management Consultant (CMC)",
+            "Project Management Professional (PMP)",
+            "Lean Six Sigma Green Belt or Black Belt"
+        ],
+        "projects": [
+            "Conducting a market analysis for a new product launch",
+            "Developing a business strategy for organizational growth",
+            "Implementing process improvements to enhance operational efficiency",
+            "Analyzing financial data to inform investment decisions",
+            "Leading change management initiatives for organizational transformation"
+        ]
+    },
+    "python_developer":{
+        "skills": [
+            "Python Programming Language",
+            "Web Development (Django, Flask)",
+            "Data Analysis and Visualization (Pandas, Matplotlib, Seaborn)",
+            "Machine Learning and AI (Scikit-learn, TensorFlow, PyTorch)",
+            "Scripting and Automation",
+            "Database Management (SQL, NoSQL)",
+            "Version Control (Git)",
+            "Testing and Debugging",
+            "API Development and Integration",
+            "Cloud Computing (AWS, Azure, GCP)"
+        ],
+        "certifications": [
+            "Certified Python Developer",
+            "Microsoft Certified: Azure Developer Associate",
+            "AWS Certified Developer - Associate"
+        ],
+        "projects": [
+            "Developing a web application using Django or Flask",
+            "Building a data analysis pipeline for large datasets",
+            "Implementing machine learning models for predictive analytics",
+            "Creating automation scripts for repetitive tasks",
+            "Integrating third-party APIs into a Python application"
+        ]
+    },
+    "java_developer":{
+        "skills": [
+            "Java Programming Language",
+            "Object-Oriented Programming (OOP) Concepts",
+            "Web Development (Spring, Hibernate)",
+            "Database Management (SQL, NoSQL)",
+            "Version Control (Git)",
+            "Testing and Debugging",
+            "API Development and Integration",
+            "Multithreading and Concurrency",
+            "Design Patterns and Best Practices",
+            "Cloud Computing (AWS, Azure, GCP)"
+        ],
+        "certifications": [
+            "Oracle Certified Professional: Java SE Programmer",
+            "Spring Professional Certification",
+            "AWS Certified Developer - Associate"
+        ],
+        "projects": [
+            "Developing a web application using Spring Boot and Hibernate",
+            "Building a RESTful API for a microservices architecture",
+            "Implementing multithreading for concurrent processing in Java applications",
+            "Creating a database-driven application with SQL or NoSQL databases",
+            "Deploying a Java application on cloud platforms"
+        ]
+    },
+    "data_analyst":{
+        "skills": [
+            "Data Analysis and Visualization (Excel, Tableau, Power BI)",
+            "Statistical Analysis and Hypothesis Testing",
+            "SQL and Database Management",
+            "Python or R for Data Analysis",
+            "Data Cleaning and Preprocessing",
+            "Data Mining and Pattern Recognition",
+            "Business Intelligence and Reporting",
+            "Problem-Solving and Critical Thinking",
+            "Communication and Presentation Skills",
+            "Domain Knowledge in Relevant Industry"
+        ],
+        "certifications": [
+            "Google Data Analytics Professional Certificate",
+            "Microsoft Certified: Data Analyst Associate",
+            "Tableau Desktop Specialist"
+        ],
+        "projects": [
+            "Analyzing sales data to identify trends and patterns",
+            "Creating interactive dashboards for business intelligence reporting",
+            "Performing statistical analysis to support decision-making processes",
+            "Developing predictive models for customer behavior analysis",
+            "Conducting market research to inform business strategy"
+        ]
+    },
+    "database_administrator":{
+        "skills": [
+            "Database Management Systems (DBMS) - SQL, NoSQL",
+            "Database Design and Modeling",
+            "Performance Tuning and Optimization",
+            "Backup and Recovery Strategies",
+            "Security and Access Control",
+            "Data Migration and Integration",
+            "Scripting Languages (SQL, Python, Bash)",
+            "Monitoring and Troubleshooting Database Issues",
+            "Cloud Database Services (AWS RDS, Azure SQL Database, GCP Cloud SQL)",
+            "Disaster Recovery Planning"
+        ],
+        "certifications": [
+            "Oracle Certified Professional (OCP)",
+            "Microsoft Certified: Azure Database Administrator Associate",
+            "AWS Certified Database - Specialty"
+        ],
+        "projects": [
+            "Designing and implementing a relational database for a business application",
+            "Optimizing database queries for improved performance",
+            "Setting up backup and recovery procedures for critical databases",
+            "Implementing security measures to protect sensitive data",
+            "Migrating on-premises databases to cloud-based solutions"
+        ]
+    }
+    
+}
