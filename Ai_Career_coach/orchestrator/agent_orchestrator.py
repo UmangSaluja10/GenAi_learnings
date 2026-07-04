@@ -57,7 +57,7 @@ class AgentOrchestrator:
         print("\nStarting Multi-Agent Workflow")
         
         final_response = None
-        for step, agent_name in enumerate(workflow, strat=1):
+        for step, agent_name in enumerate(workflow, start=1):
             agent = self._agents.get(agent_name.lower())
             if agent is None:
                 raise ValueError(f"Agent {agent_name} is not registered")

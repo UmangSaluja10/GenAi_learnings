@@ -48,7 +48,7 @@ class WorkflowRegistry:
         if not self.workflow_exists(workflow_name):
             raise ValueError(f"Workflow {workflow_name} is not registered")
         
-        return self._workflow(workflow_name)
+        return self._workflow[workflow_name]
     
     def workflow_exists(self, workflow_name: str) -> bool:
         """

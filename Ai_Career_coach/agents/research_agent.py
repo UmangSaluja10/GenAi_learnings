@@ -8,10 +8,10 @@ from prompts.researcher_prompt import RESEARCH_PROMPT
 
 class ResearchAgent(BaseAgent):
     def get_agent_name(self):
-        return "Research"
+        return "Researcher"
     
     def get_memory_key(self):
-        return "research"
+        return "researcher"
     
     def build_prompt(self):
         planner_response = self.memory.get("planner")
