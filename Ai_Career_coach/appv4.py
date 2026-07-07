@@ -76,6 +76,9 @@ def main() -> None:
         print("="*50)
         print(final_response.output)
 
+        # Execution Summary
+        orchestrator.display_execution_summary()
+
         conversation_memory.display()
 
 if __name__ == "__main__":
