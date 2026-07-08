@@ -35,6 +35,9 @@ class AgentOrchestrator:
         self.conversation_memory = conversation_memory
         self._agents: Dict[str,BaseAgent] = {}
         self._execution_results:List[AgentExecutionResult] = []
+        self._aproval_required_agents = {
+            "reviewer"
+        }
 
     def register(self, agent: BaseAgent) -> None:
         """
@@ -78,6 +81,24 @@ class AgentOrchestrator:
                 raise ValueError(f"Agent {agent_name} is not registered")
             
             print(f"\nStep {step}: Executing {agent.get_agent_name()} Agent...")
+
+            # Human Approval Check
+            if agent_name.lower() in self._aproval_required_agents:
+                approved = self._request_human_approval(agent)
+
+                if not approved:
+                    print(f"{agent.get_agent_name()} execution cancelled...")
+                    self._execution_results.append(
+                    AgentExecutionResult(
+                        agent_name = agent.get_agent_name(),
+                        status = "SKIPPED",
+                        attempts = 0,
+                        execution_time = 0.0,
+                        error_message="Execution rejected by user"
+                    )
+                )
+                    print("\nWorkflow stopped by user...")
+                    break
             # final_response = agent.execute()
             final_response = self._execute_with_retry(agent)
             print(f"{agent.get_agent_name()} completed successfully...")
@@ -138,6 +159,32 @@ class AgentOrchestrator:
             f"after {self.MAX_RETRIES} attempts"
         ) from last_exception
     
+
+    def _request_human_approval(self, agent: BaseAgent) -> bool:
+        """
+        Ask the user for approval before executing a critical AI Agent.
+        
+        Args:
+            agent:
+                Agent requiring approval
+        Returns:
+            True if approved 
+            False otherwise
+        """
+        print("="*50)
+        print("Human Approval Required")
+        print("="*50)
+        print(f"{agent.get_agent_name()} Agent requires manual approval")
+
+        while True:
+            choice = input("Approve execution ? (Y/N): ").strip().lower()
+            if choice == "y":
+                return True
+            if choice == "n":
+                return False
+            
+            print("Invalid input. Please enter Y or N.")
+
 
     def get_execution_results(self) -> List[AgentExecutionResult]:
         """
