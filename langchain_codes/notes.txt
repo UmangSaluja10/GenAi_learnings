@@ -1,0 +1,19 @@
+Create virtual environment
+
+use command:
+python -m venv langchain_env
+
+activate environment:
+langchain_env\Scripts\activates
+
+
+Install packages:
+pip install langchain
+pip install langchain-google-genai
+pip install python-dotenv
+
+
+LLM Provider - Gemini / OpenAI / Claude
+We prefer Gemini because it's free
+
+Generate API Key from google AI Studio
