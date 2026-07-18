@@ -17,3 +17,42 @@ LLM Provider - Gemini / OpenAI / Claude
 We prefer Gemini because it's free
 
 Generate API Key from google AI Studio
+
+AI Coding Assistant
+
+Prompt Templates
+- Reuseable prompts
+
+If I ask:
+Write Bubble sort
+It works....
+
+Explain Bubble sort like I am a 10 years old
+Different response
+
+Now try this:
+Act like a Java Architect
+
+Desired behavior of Coding Assistant:
+1. Professional
+2. Senior software engineer
+3. Give optimised code
+4. Explain complexity
+5. Mention best practices
+
+System prompt
+- Design the personality of Assistant
+for example:
+You are a senior software engineer with 15+ years of experience
+Help users write clean, optimised, production-ready code
+Always explain your solution
+Mention time and space complexity where applicable
+Suggest best practices
+
+Now every response will be consistent
+
+
+Human Message:
+{user_query}
+
+
