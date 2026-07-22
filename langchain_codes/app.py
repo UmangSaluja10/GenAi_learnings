@@ -1,26 +1,62 @@
-from services.llm_service import get_model
-from prompts.coding_prompt import coding_prompt
-from parser.output_parser import output_parser
+from chains.coding_chain import coding_chain
+
+def show_menu():
+    print("Choose an option: ")
+    print("="*60)
+    print("1. Ask a coding question")
+    print("2. Generate Code Snippet")
+    print("3. Explain Code")
+    print("4. Exit")
+
+def get_user_query(choice):
+    if choice == "1":
+        return input("Ask coding question: ")
+    elif choice == "2":
+        return input("Provide a description for code snippet generation: ")
+    elif choice == "3":
+        return input("Paste the code you want to be explained: ")
+    else:
+        return None
 
 def main():
-    model = get_model()
+    # model = get_model()
     # | - Pipe operator
     # Pipe operator - Creating a processing pipeline
-    chain = coding_prompt | model | output_parser
+    # chain = coding_prompt | model | output_parser
 
     while True:
-        question = input("Ask coding question: ")
+        show_menu()
+        choice = input("Enter your choice (1-4): ")
 
-        if question.lower() == "exit":
+        if choice == "4":
             print("Thankyou for using AI Coding Assistant")
             break
 
+        if choice not in ["1","2","3"]:
+            print("Invalid choice. Please try again.")
+
+        question = get_user_query(choice)
+        if not question:
+            continue
+
         print("\nGenerating Response")
+
+        task_map = {
+            "1": "Answer the coding question",
+            "2": "Generate a code snippet based on the description",
+            "3": "Explain the provided code"
+        }
+
+
         # prompt = coding_prompt.invoke({
         #     "question":question
         # })
         # reponse = model.invoke(prompt)
-        response = chain.invoke({
+        # response = chain.invoke({
+        #     "question":question
+        # })
+        response = coding_chain.invoke({
+            "task": task_map[choice],
             "question":question
         })
         print(response)

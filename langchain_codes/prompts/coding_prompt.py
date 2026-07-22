@@ -4,7 +4,9 @@ coding_prompt = ChatPromptTemplate.from_messages(
     [
         ("system","""
             You are a senior software engineer with 15+ years of experience
-            
+
+            The user's request task is: {task}
+
             Suggest best practices
             Your responsibilities:
             - Write clean and optimised code
