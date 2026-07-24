@@ -128,3 +128,43 @@ Prompt: reverse string..
     "question": "Write Python code to reverse a string",
     "language": "Python"
 }
+
+
+Context
+Context Management
+Why LLM need Context
+Stateless VS Stateful Conversations
+Message types in LangChain
+HumanMessage
+AIMessage
+SystemMessage
+Conversation History
+Multi-turn AI Coding Assistant
+
+Context:
+Information that models receives along wih the current request to generate a repsonse
+
+Stateless VS Stateful:
+Stateless- Every request is independent
+Stateful- Each request is dependent on previous requests...
+
+Message Types in LangChain
+- HumanMessage - User input
+- AIMessage - Model Response
+- SystemMessage - Defines Behaviour
+
+
+Context Window:
+- Every model has a maximum amount of context it can process
+
+Context includes:
+- System Prompt
+- Previous Conversation
+- Current question
+
+
+RunnableLambda -> preprocess the input
+MeassagePlaceholder -> inject conversation History
+Conversation memory -> maintains the context
+Context management -> control what the model sees
+

@@ -8,11 +8,13 @@ def preprocess_input(data: dict) -> dict:
     question = data["question"].strip()
     task = data["task"]
     language = "Python"
+    history = data["history"]
 
     return {
         "task": task,
         "question": question,
-        "language": language
+        "language": language,
+        "history": history
     }
 
 input_processor = RunnableLambda(preprocess_input)

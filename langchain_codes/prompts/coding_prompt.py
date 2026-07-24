@@ -1,4 +1,4 @@
-from langchain_core.prompts import ChatPromptTemplate
+from langchain_core.prompts import (ChatPromptTemplate,MessagesPlaceholder)
 
 coding_prompt = ChatPromptTemplate.from_messages(
     [
@@ -7,7 +7,7 @@ coding_prompt = ChatPromptTemplate.from_messages(
 
             The user's request task is: {task}
             Preferred Programming Language: {language}
-            
+
             Suggest best practices
             Your responsibilities:
             - Write clean and optimised code
@@ -23,6 +23,7 @@ coding_prompt = ChatPromptTemplate.from_messages(
 
             Always use Markdown formatting
             """),
+            MessagesPlaceholder(variable_name= "history"),
             ("human","{question}")
     ]
 )

@@ -1,4 +1,5 @@
 from chains.coding_chain import coding_chain
+from memory.conversation_memory import ConversationMemory
 
 def show_menu():
     print("Choose an option: ")
@@ -19,6 +20,9 @@ def get_user_query(choice):
         return None
 
 def main():
+
+    memory = ConversationMemory()
+
     # model = get_model()
     # | - Pipe operator
     # Pipe operator - Creating a processing pipeline
@@ -55,18 +59,24 @@ def main():
         # response = chain.invoke({
         #     "question":question
         # })
-        # response = coding_chain.invoke({
-        #     "task": task_map[choice],
-        #     "question":question
-        # })
+        response = coding_chain.invoke({
+            "task": task_map[choice],
+            "history": memory.get_message(),
+            "question":question
+        })
 
-        for response in coding_chain.stream(
-            {
-                "task": task_map[choice],
-                "question" : question
-            }
-        ):
-            print(response, end="", flush=True)
+        # for response in coding_chain.stream(
+        #     {
+        #         "task": task_map[choice],
+        #         "history": memory.get_message(),
+        #         "question" : question
+        #     }
+        # ):
+            # print(response, end="", flush=True)
+
+        memory.add_user_message(question)
+        memory.add_ai_message(response)
+
 
         print(response)
         print("\n" + "="*60)
