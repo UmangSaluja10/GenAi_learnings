@@ -43,8 +43,8 @@ def main():
 
         task_map = {
             "1": "Answer the coding question",
-            "2": "Generate a code snippet based on the description",
-            "3": "Explain the provided code"
+            "2": "Generate production-ready source code",
+            "3": "Explain the provided source code"
         }
 
 
@@ -55,10 +55,19 @@ def main():
         # response = chain.invoke({
         #     "question":question
         # })
-        response = coding_chain.invoke({
-            "task": task_map[choice],
-            "question":question
-        })
+        # response = coding_chain.invoke({
+        #     "task": task_map[choice],
+        #     "question":question
+        # })
+
+        for response in coding_chain.stream(
+            {
+                "task": task_map[choice],
+                "question" : question
+            }
+        ):
+            print(response, end="", flush=True)
+
         print(response)
         print("\n" + "="*60)
 

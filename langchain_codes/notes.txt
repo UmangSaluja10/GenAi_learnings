@@ -81,3 +81,50 @@ chain = prompt | model | parser
 
 from langchain_core.runnables import RunnableSequence
 chain = RunnableSequence([coding_prompt, get_model(), output_parser])
+
+More different types of Runnable:
+RunnableLambda
+RunnablePassthrough
+RunnableParallel
+RunnableBranch
+
+What is a Runnable?
+-Every component in LangChain is Runnable
+Example: Prompt, Model, Parser, chain
+
+RunnableLambda:
+User enters: reverse String
+Our prompt expect: Write Python code to reverse a String
+Preprocessing of input
+
+RunnableLambda modifies the input before it reaches the prompt...
+
+RunnablePassthrough:
+Suppose later we want to log:
+- User Question
+- AI response
+
+RunnablePassthrough simply forwards data while allowing additional processing
+
+RunnableParallel:
+Question: Explain Binary Search
+Ask simultaneously:
+- Explain concept
+- Generate code
+- Generate interview questions
+
+Three independent tasks...
+
+RunnableBranch:
+Question: What is Java
+Coding Question -> Coding chain
+
+Question: Who won last fifa world cup
+General Question -> General Assistant
+
+Prompt: reverse string..
+{
+    "task": "Generate production-ready code",
+    "question": "Write Python code to reverse a string",
+    "language": "Python"
+}
