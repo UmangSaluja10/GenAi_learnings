@@ -14,7 +14,7 @@ class ConversationMemory:
             AIMessage(content=answer)
         )
 
-    def get_message(self):
+    def get_history(self):
         return self.message
 
     def clear(self):
